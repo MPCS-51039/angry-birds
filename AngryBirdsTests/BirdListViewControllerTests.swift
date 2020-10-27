@@ -36,6 +36,11 @@ class BirdListViewControllerTests: XCTestCase {
             Bird(named: "Cardinal", description: "Angry", imageUrl: "birds.com/angrycardinal"),
             Bird(named: "Robin", description: "Angry", imageUrl: "birds.com/angryrobin"),
         ]
+//        let mockBirds = [
+//            Bird(named: "Oriole", description: "Angry", imageUrl: "https://chelseatroy.com/wp-content/uploads/2019/05/oriole.png"),
+//            Bird(named: "Cardinal", description: "Angry", imageUrl: "https://chelseatroy.com/wp-content/uploads/2019/05/cardinal.png"),
+//            Bird(named: "Robin", description: "Angry", imageUrl: "https://chelseatroy.com/wp-content/uploads/2019/05/whateverThisIs.png"),
+//        ]
         mockBirdService.mockBirds = mockBirds
         
         self.systemUnderTest.viewDidLoad()
