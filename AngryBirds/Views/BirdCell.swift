@@ -28,7 +28,7 @@ class BirdCell: UITableViewCell {
                         self.birdImageView.layer.cornerRadius = self.birdImageView.frame.width / 2
                     }
                 } else {
-                     bird image is nil. use backup
+                    // bird image is nil. use backup
                     let birdImageDataBackup = NSData(contentsOf: URL(string:"https://www.wbu.com/wp-content/uploads/2016/05/404-450x238.jpg")!)
                     DispatchQueue.main.async {
                         self.birdImageView.image = UIImage(data: birdImageDataBackup as! Data)
