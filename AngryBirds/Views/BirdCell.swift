@@ -21,10 +21,19 @@ class BirdCell: UITableViewCell {
             self.accessoryType = bird!.confirmedSighting ? .checkmark : .none
             
             DispatchQueue.global(qos: .userInitiated).async {
-                let birdImageData = NSData(contentsOf: URL(string: self.bird!.imageUrl)!)
-                DispatchQueue.main.async {
-                    self.birdImageView.image = UIImage(data: birdImageData as! Data)
-                    self.birdImageView.layer.cornerRadius = self.birdImageView.frame.width / 2
+                if let birdImageData = NSData(contentsOf: URL(string: self.bird!.imageUrl)!)
+                {
+                    DispatchQueue.main.async {
+                        self.birdImageView.image = UIImage(data: birdImageData as! Data)
+                        self.birdImageView.layer.cornerRadius = self.birdImageView.frame.width / 2
+                    }
+                } else {
+                    // bird image is nil. use backup
+                    let birdImageDataBackup = NSData(contentsOf: URL(string:"https://www.wbu.com/wp-content/uploads/2016/05/404-450x238.jpg")!)
+                    DispatchQueue.main.async {
+                        self.birdImageView.image = UIImage(data: birdImageDataBackup as! Data)
+                        self.birdImageView.layer.cornerRadius = self.birdImageView.frame.width / 2
+                    }
                 }
             }
         }
