@@ -49,6 +49,8 @@ class BirdListViewControllerTests: XCTestCase {
         //Then
         XCTAssertEqual(mockBirds.count, self.systemUnderTest.flock.count)
         XCTAssertEqual(mockBirds.count, self.systemUnderTest.tableView.numberOfRows(inSection: 0))
+        
+        self.systemUnderTest.birdService = BirdService()
     }
     
     class MockBirdService: BirdService {

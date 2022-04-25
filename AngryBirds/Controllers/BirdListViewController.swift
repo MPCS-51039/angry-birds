@@ -29,9 +29,11 @@ class BirdListViewController: UIViewController {
         
        confirmedService.getBirds(completion: { birds, error in
             guard let birds = birds, error == nil else {
+                //do uialertcontroller if error is problemgettingdata
                 return
             }
             self.flock = birds
+            //if flock.length = 0 birdcell.innertext is 'error'
             self.tableView.reloadData()
        })
     }
