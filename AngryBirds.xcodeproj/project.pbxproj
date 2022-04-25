@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76024D91244B771800C0F85D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76024D90244B771700C0F85D /* DetailViewController.swift */; };
+		76024D93244F87E900C0F85D /* BirdTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76024D92244F87E900C0F85D /* BirdTest.swift */; };
+		768D94EC2454EC4A008F8E35 /* BirdServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D94EB2454EC4A008F8E35 /* BirdServiceTests.swift */; };
+		768D94EE2454F727008F8E35 /* BirdListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D94ED2454F727008F8E35 /* BirdListViewControllerTests.swift */; };
 		76BB0F102441075B005D5BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0F0F2441075B005D5BDF /* AppDelegate.swift */; };
 		76BB0F122441075B005D5BDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0F112441075B005D5BDF /* SceneDelegate.swift */; };
 		76BB0F142441075B005D5BDF /* BirdListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0F132441075B005D5BDF /* BirdListViewController.swift */; };
@@ -16,6 +20,9 @@
 		76BB0F1F2441075C005D5BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BB0F1D2441075C005D5BDF /* LaunchScreen.storyboard */; };
 		76BB0F2A2441075C005D5BDF /* AngryBirdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0F292441075C005D5BDF /* AngryBirdsTests.swift */; };
 		76BB0F352441075D005D5BDF /* AngryBirdsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0F342441075D005D5BDF /* AngryBirdsUITests.swift */; };
+		76BB0FC324456BAD005D5BDF /* BirdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0FC224456BAD005D5BDF /* BirdCell.swift */; };
+		76BB0FC524456EC3005D5BDF /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0FC424456EC3005D5BDF /* Bird.swift */; };
+		76BB0FC724457111005D5BDF /* BirdService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0FC624457111005D5BDF /* BirdService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76024D90244B771700C0F85D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		76024D92244F87E900C0F85D /* BirdTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdTest.swift; sourceTree = "<group>"; };
+		768D94EB2454EC4A008F8E35 /* BirdServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdServiceTests.swift; sourceTree = "<group>"; };
+		768D94ED2454F727008F8E35 /* BirdListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdListViewControllerTests.swift; sourceTree = "<group>"; };
 		76BB0F0C2441075B005D5BDF /* AngryBirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BB0F0F2441075B005D5BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BB0F112441075B005D5BDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +62,9 @@
 		76BB0F302441075D005D5BDF /* AngryBirdsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryBirdsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BB0F342441075D005D5BDF /* AngryBirdsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryBirdsUITests.swift; sourceTree = "<group>"; };
 		76BB0F362441075D005D5BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BB0FC224456BAD005D5BDF /* BirdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdCell.swift; sourceTree = "<group>"; };
+		76BB0FC424456EC3005D5BDF /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		76BB0FC624457111005D5BDF /* BirdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +115,11 @@
 		76BB0F0E2441075B005D5BDF /* AngryBirds */ = {
 			isa = PBXGroup;
 			children = (
+				76BB0FCB24457217005D5BDF /* Data */,
+				76BB0FCA244571FE005D5BDF /* Controllers */,
+				76BB0FC9244571F2005D5BDF /* Views */,
 				76BB0F0F2441075B005D5BDF /* AppDelegate.swift */,
 				76BB0F112441075B005D5BDF /* SceneDelegate.swift */,
-				76BB0F132441075B005D5BDF /* BirdListViewController.swift */,
 				76BB0F152441075B005D5BDF /* Main.storyboard */,
 				76BB0F1B2441075C005D5BDF /* Assets.xcassets */,
 				76BB0F1D2441075C005D5BDF /* LaunchScreen.storyboard */,
@@ -118,6 +134,9 @@
 			children = (
 				76BB0F292441075C005D5BDF /* AngryBirdsTests.swift */,
 				76BB0F2B2441075C005D5BDF /* Info.plist */,
+				76024D92244F87E900C0F85D /* BirdTest.swift */,
+				768D94EB2454EC4A008F8E35 /* BirdServiceTests.swift */,
+				768D94ED2454F727008F8E35 /* BirdListViewControllerTests.swift */,
 			);
 			path = AngryBirdsTests;
 			sourceTree = "<group>";
@@ -129,6 +148,32 @@
 				76BB0F362441075D005D5BDF /* Info.plist */,
 			);
 			path = AngryBirdsUITests;
+			sourceTree = "<group>";
+		};
+		76BB0FC9244571F2005D5BDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76BB0FC224456BAD005D5BDF /* BirdCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76BB0FCA244571FE005D5BDF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76BB0F132441075B005D5BDF /* BirdListViewController.swift */,
+				76024D90244B771700C0F85D /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		76BB0FCB24457217005D5BDF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				76BB0FC624457111005D5BDF /* BirdService.swift */,
+				76BB0FC424456EC3005D5BDF /* Bird.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +309,12 @@
 			files = (
 				76BB0F1A2441075B005D5BDF /* AngryBirds.xcdatamodeld in Sources */,
 				76BB0F142441075B005D5BDF /* BirdListViewController.swift in Sources */,
+				76BB0FC324456BAD005D5BDF /* BirdCell.swift in Sources */,
 				76BB0F102441075B005D5BDF /* AppDelegate.swift in Sources */,
+				76BB0FC724457111005D5BDF /* BirdService.swift in Sources */,
+				76BB0FC524456EC3005D5BDF /* Bird.swift in Sources */,
 				76BB0F122441075B005D5BDF /* SceneDelegate.swift in Sources */,
+				76024D91244B771800C0F85D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76024D93244F87E900C0F85D /* BirdTest.swift in Sources */,
+				768D94EE2454F727008F8E35 /* BirdListViewControllerTests.swift in Sources */,
 				76BB0F2A2441075C005D5BDF /* AngryBirdsTests.swift in Sources */,
+				768D94EC2454EC4A008F8E35 /* BirdServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
